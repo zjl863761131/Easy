@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_score">
+
+    <fragment
+        android:id="@+id/navigation_cloud"
+        android:name="com.example.easy.ui.cloud.CloudFragment"
+        android:label="云相册"
+        tools:layout="@layout/fragment_cloud"
+        />
+
+    <fragment
+        android:id="@+id/navigation_ranklist"
+        android:name="com.example.easy.ui.ranklist.RankListFragment"
+        android:label="排行榜"
+        tools:layout="@layout/fragment_ranklist"
+        />
+
+    <fragment
+        android:id="@+id/navigation_score"
+        android:name="com.example.easy.ui.score.ScoreFragment"
+        android:label="测测你的颜值"
+        tools:layout="@layout/fragment_score"
+        />
+
+    <fragment
+        android:id="@+id/navigation_usermsg"
+        android:name="com.example.easy.ui.usermsg.UserMsgFragment"
+        android:label="个人中心"
+        tools:layout="@layout/fragment_usermsg"
+        />
+
+</navigation>

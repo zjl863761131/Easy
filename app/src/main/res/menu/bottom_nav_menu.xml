@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/navigation_score"
+        android:icon="@drawable/ic_dashboard_black_24dp"
+        android:title="测颜值"/>
+
+    <item android:id="@+id/navigation_cloud"
+        android:icon="@drawable/ic_dashboard_black_24dp"
+        android:title="云相册"/>
+
+    <item android:id="@+id/navigation_ranklist"
+        android:icon="@drawable/ic_dashboard_black_24dp"
+        android:title="排行榜"/>
+
+    <item android:id="@+id/navigation_usermsg"
+        android:icon="@drawable/ic_dashboard_black_24dp"
+        android:title="个人中心"/>
+
+</menu>

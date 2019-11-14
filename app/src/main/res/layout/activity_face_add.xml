@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.facesearch.FaceAddActivity">
+
+    <TextView
+        android:id="@+id/faceadd_title"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:text="上传用户信息"
+        android:textSize="28sp"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.10"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <ImageView
+        android:id="@+id/faceadd_img"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/faceadd_title"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.10"/>
+
+    <EditText
+        android:id="@+id/faceadd_userid"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:hint="请输入用户组"
+        android:inputType="textPersonName"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/faceadd_img"/>
+
+    <EditText
+        android:id="@+id/faceadd_userinfo"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:hint="请输入用户描述"
+        android:inputType="textPersonName"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/faceadd_userid"/>
+
+
+    <Button
+        android:id="@+id/faceadd_select_img"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="选择照片"
+        app:layout_constraintTop_toBottomOf="@+id/faceadd_userinfo"
+        app:layout_constraintLeft_toLeftOf="@id/faceadd_title"
+        app:layout_constraintRight_toRightOf="@id/faceadd_title"
+        app:layout_constraintHorizontal_bias="0"/>
+
+    <Button
+        android:id="@+id/faceadd_takephoto"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:gravity="center"
+        android:text="使用相机"
+        app:layout_constraintTop_toBottomOf="@+id/faceadd_userinfo"
+        app:layout_constraintLeft_toLeftOf="@id/faceadd_title"
+        app:layout_constraintLeft_toRightOf="@+id/faceadd_select_img"
+        app:layout_constraintRight_toRightOf="@+id/faceadd_title"
+        app:layout_constraintHorizontal_bias="1"/>
+
+    <Button
+        android:id="@+id/faceadd_upload_img"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="上传照片"
+        app:layout_constraintTop_toBottomOf="@+id/faceadd_takephoto"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

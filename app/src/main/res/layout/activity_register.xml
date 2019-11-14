@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.register.RegisterActivity">
+
+    <TextView
+        android:id="@+id/register_title"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:text="比一比注册"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:textColor="@color/colorBlack"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.01"
+        />
+
+    <EditText
+        android:id="@+id/register_username"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="50dp"
+        android:ems="10"
+        android:hint="请输入用户名"
+        android:inputType="textPersonName"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/register_title" />
+
+    <EditText
+        android:id="@+id/register_password"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="50dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="请输入密码"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/register_username" />
+
+    <Button
+        android:id="@+id/register_submit"
+        android:layout_width="250dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="50dp"
+        android:text="注册"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/register_password"/>
+
+    <TextView
+        android:id="@+id/word"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginTop="100dp"
+        android:gravity="center"
+        android:text="已有账号，请"
+        app:layout_constraintStart_toStartOf="@+id/register_submit"
+        app:layout_constraintTop_toBottomOf="@+id/register_submit"
+        app:layout_constraintRight_toLeftOf="@+id/to_register" />
+
+    <Button
+        android:id="@+id/to_login"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="100dp"
+        android:background="@color/colorWhite"
+        android:text="登录"
+        app:layout_constraintTop_toBottomOf="@+id/register_submit"
+        app:layout_constraintLeft_toRightOf="@+id/word"/>
+
+    <TextView
+        android:id="@+id/word2"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:text="登录即表示同意本应用的用户协议"
+        app:layout_constraintTop_toBottomOf="@id/word"
+        app:layout_constraintLeft_toLeftOf="@+id/word"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
